@@ -4,12 +4,12 @@ window.addEventListener("load", initApp);
 async function initApp() {
   console.log(`.js gang gang`);
   let butters = await getCharacter(
-    `https://raw.githubusercontent.com/cederdorff/dat-js/main/data/harry.json`
+    `https://raw.githubusercontent.com/Asbjoernemil/data-assignment/main/data/characters.json`
   );
   showCharacter(butters);
 
   let tuong = await getCharacter(
-    `https://raw.githubusercontent.com/cederdorff/dat-js/main/data/draco.json`
+    `https://raw.githubusercontent.com/Tunafan/southpark_db/main/South%20Park%20db/data/characters.json`
   );
   showCharacter(tuong);
 
