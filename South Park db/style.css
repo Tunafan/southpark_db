@@ -1,12 +1,19 @@
 body {
   background-color: blueviolet;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#characters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4em;
+  padding: 1em;
+}
+#characters img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
 }
 
-#lol {
-  width: 12em;
-}
-
-h3 {
-  border-top: -20em;
-  font-style: italic;
+footer {
+  text-align: center;
 }

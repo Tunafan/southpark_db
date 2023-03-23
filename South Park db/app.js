@@ -6,14 +6,15 @@ async function initApp() {
   let butters = await getCharacter(
     `https://raw.githubusercontent.com/Asbjoernemil/data-assignment/main/data/characters.json`
   );
-  showCharacter(butters);
-
   let tuong = await getCharacter(
-    `https://raw.githubusercontent.com/Tunafan/southpark_db/main/South%20Park%20db/data/characters.json`
+    `https://raw.githubusercontent.com/TheDanishMexican/object-south-park/main/data/app.json`
   );
-  showCharacter(tuong);
+  let paris = await getCharacter(
+    "https://raw.githubusercontent.com/Tunafan/southpark_db/main/South%20Park%20db/data/paris.json"
+  );
 
-  let paris = await getCharacter("data/paris.json");
+  showCharacter(butters);
+  showCharacter(tuong);
   showCharacter(paris);
 }
 
@@ -26,22 +27,23 @@ async function getCharacter(url) {
 function showCharacter(character) {
   console.log(character);
 
-  document.querySelector("body").insertAdjacentHTML(
-    "beforebegin",
+  document.querySelector("#characters").insertAdjacentHTML(
+    "beforeend",
+    // herunder ligger character traits
     /*html*/ `
     <article>
         <h2>${character.name}</h2>
         <img src="${character.image}" id="lol" alt="" />
-        <header>${character.nickname}</header>
-        <header>${character.occupation}</header>
-        <header>${character.age}</header>
-        <header>${character.voicedBy}</header>
-        <header>${character.gender}</header>
-        <header>${character.catchPhrase}</header>
-        <header>${character.hairColor}</header>
-        <header>${character.episodes}</header>
-        <header>${character.appearances}</header>
-        <header>${character.firstAppearance}</header>
+        <p><b>Other names:</b> ${character.nickname}<p>
+        <p><b>Job\(s\):</b> ${character.occupation}<p>
+        <p><b>Age:</b> ${character.age}<p>
+        <p><b>Voices:</b> ${character.voicedBy}<p>
+        <p><b>Gender:</b> ${character.gender}<p>
+        <p><b>Sayings:</b> ${character.catchPhrase}<p>
+        <p><b>Hair colour:</b> ${character.hairColor}<p>
+        <p><b>Appears in:</b> ${character.episodes}<p>
+        <p><b>Total appearances:</b> ${character.appearances}<p>
+        <p><b>First appearance:</b> ${character.firstAppearance}<p>
         </article>`
   );
 }
