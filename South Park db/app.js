@@ -3,17 +3,17 @@ window.addEventListener("load", initApp);
 
 async function initApp() {
   console.log(`.js gang gang`);
-  let harry = await getCharacter(
+  let butters = await getCharacter(
     `https://raw.githubusercontent.com/cederdorff/dat-js/main/data/harry.json`
   );
-  showCharacter(harry);
+  showCharacter(butters);
 
-  let draco = await getCharacter(
+  let tuong = await getCharacter(
     `https://raw.githubusercontent.com/cederdorff/dat-js/main/data/draco.json`
   );
-  showCharacter(draco);
+  showCharacter(tuong);
 
-  let paris = await getCharacter("data/characters.json");
+  let paris = await getCharacter("data/paris.json");
   showCharacter(paris);
 }
 
