@@ -1,5 +1,5 @@
 body {
-  background-color: blueviolet;
+  background-color: rgb(250, 97, 245);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #characters {
@@ -16,4 +16,12 @@ body {
 
 footer {
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(255, 231, 231);
+  border-radius: 10vw;
+  width: 11em;
+  margin: 0 auto;
 }

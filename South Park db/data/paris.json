@@ -2,15 +2,15 @@
   "name": "Paris Whitney Hilton",
   "nickname": "Stupid Spoiled Whore",
   "image": "https://southparkstudios.mtvnimages.com/shared/characters/celebrities/paris-hilton.png",
-  "occupation": "businesswoman, influencer, activist, DJ, designer, investor, recording artist, philanthropist, host, actress, chef, model and author",
-  "age": "Born on February 17th 1981",
+  "occupation": "businesswoman, influencer, activist, DJ, designer, investor, recording artist, philanthropist, host, actress, chef, model, and author",
+  "age": "42",
   "voicedBy": "Jennifer",
   "gender": "Female",
-  "religion": "Yes",
-  "catchPhrase": "Another dog killed itself!",
+  "religion": "Roman Catholic",
+  "catchPhrase": "\"Another dog killed itself!\"",
   "hairColor": "Bleach blonde",
-  "schoolGrade": "",
-  "episodes": "Yes",
-  "appearances": "5 episodes",
-  "firstAppearance": "s08e12"
+  "schoolGrade": null,
+  "episodes": "S08E12, S11E13, S12E02, S14E05, S14E06",
+  "appearances": "5",
+  "firstAppearance": "S08E12"
 }
