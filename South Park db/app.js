@@ -25,15 +25,9 @@ function showCharacter(character) {
     <article>
         <h2>${character.name}</h2>
         <img src="${character.image}" id="lol" alt="" />
-        <p><b>Other names:</b> ${character.nickname}<p>
         <p><b>Job\(s\):</b> ${character.occupation}<p>
-        <p><b>Age:</b> ${character.age}<p>
         <p><b>Voices:</b> ${character.voicedBy}<p>
-        <p><b>Gender:</b> ${character.gender}<p>
         <p><b>Saying:</b> ${character.catchPhrase}<p>
-        <p><b>Hair colour:</b> ${character.hairColor}<p>
-        <p><b>Appears in:</b> ${character.episodes}<p>
-        <p><b>Total appearances:</b> ${character.appearances}<p>
         <p><b>First appearance:</b> ${character.firstAppearance}<p>
         </article>`
   );
@@ -75,14 +69,6 @@ function showCharacter(character) {
 }
 function generateDescription(character) {
   let description = "";
-  if (character.hogwartsStaff && character.alive) {
-    description = `${character.name} is employed at Hogwarts.`;
-  } else if (character.hogwartsStaff && !character.alive) {
-    description = `${character.name} was employed at Hogwarts but is no longer alive.`;
-  } else if (character.hogwartsStudent && character.alive) {
-    description = `${character.name} is a student at Hogwarts.`;
-  } else if (character.hogwartsStudent && !character.alive) {
-    description = `${character.name} was a student at Hogwarts but is no longer alive.`;
-  }
+
   return description;
 }
